@@ -1,0 +1,22 @@
+{
+  "name": "chat_box",
+  "version": "1.0.0",
+  "description": "A casual chat_box with socket.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "socket",
+    "server",
+    "socketserver"
+  ],
+  "author": "Karen Etluxia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.3",
+    "tarball": "0.0.5"
+  }
+}
