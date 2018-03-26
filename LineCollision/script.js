@@ -59,14 +59,11 @@ function animate() {
   g.rad.draw(ctx, g.pos.dx, g.pos.dy, 50, "#00ff00");
   g.tan.draw(ctx, g.pos.dx, g.pos.dy, 50, "#0000ff");
   g.point.draw();
-  console.log(g.pos.dy <= lineA.slope * g.pos.dx + lineA.yIntercept);
   if (g.pos.dy <= lineA.slope * g.pos.dx + lineA.yIntercept && temp < 4){
     g.point.c = "#ff0000";
     temp = 0;
   } else {
-    //g.point.c = "#00ff00";
-    //console.log(temp);
-    g.rad.angle = -g.rad.angle;
+    g.rad.angle += Math.PI;
     g.vel.sum(g.rad, g.tan);
     temp++;
   }
